@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         stack.axis = .vertical
         stack.alignment = .center
         stack.distribution = .fillEqually
-        stack.spacing = 5
+        stack.spacing = 8
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
@@ -168,9 +168,31 @@ class ViewController: UIViewController {
             
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-        
+            stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            
+            buttonC.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 10),
+            buttonC.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -10),
+            buttonC.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 10),
+            
+            buttonD.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 15),
+            buttonD.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -15),
+            
+            buttonE.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 20),
+            buttonE.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -20),
+            
+            buttonF.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 25),
+            buttonF.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -25),
+            
+            buttonG.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 30),
+            buttonG.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -30),
+            
+            buttonA.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 35),
+            buttonA.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -35),
+            
+            buttonB.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 40),
+            buttonB.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -40),
+
         ])
     }
     
